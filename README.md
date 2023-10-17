@@ -1,0 +1,71 @@
+# Grid Craft Launcher
+
+> This project is under development.
+
+**Note: This program is provided "as-is" so there are no guarantees that this source code obeys standards and compliance.**
+
+The process of developing GCL:
+
+- [x] Microsoft OAuth2 verification (briefly accomplished)
+- [ ] Download
+    - [ ] Game download
+    - [ ] Mods download
+- [ ] Java management
+    - [ ] Auto-detect
+    - [ ] Custom directory
+    - [ ] Automatically match the proper Java version with selected Minecraft version
+- [ ] Manage game and mods
+    - [ ] Game
+    - [ ] Mods
+- [ ] Game launch
+    - [ ] Genius login
+    - [ ] Offline login
+- [ ] Completed application interface
+    - [ ] "Launch" panel
+    - [ ] "Management" panel
+    - [ ] "Settings" panel
+    - [ ] "About" panel
+
+### What You Should Know
+
+Because GCL used Tauri, elements in client area of GCL window might not normally display on other operating systems as they use different webview.
+
+* On Windows, it is [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2), which is pre-installed on Windows 11 and Windows 10 (version 2004 and later). If you have not installed it yet or can not find it on your computer, download and install it. Please note: WebView2 only supports Windows 7 and upper versions, which means GCL can never runs on Windows XP and other older Windows.
+* On MacOS, it is [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview), which is pre-installed on macOS 10.10 and later. However, WKWebview does not have standalone version. That means if your MacOS version is lower than 10.10, it is necessary to upgrade your MacOS version or buy a new Mac.
+* On GNU/Linux, it is generally [WebKitGTK](https://webkitgtk.org/), but its specific version depends on the version of GNU/Linux distribution. If possible, you'd better upgrade software packages or manually download the package from its official website to avoid running into exceptions.
+
+### Introduction
+
+The Grid Craft Launcher, also called "GCL", is one of good alternatives of Minecraft official launcher. Thanks to Rust, it is fast and memory-safety!
+
+GCL is also a cross-platform launcher! It can runs on mutiple operating systems and brings you the same experiences.
+
+Because GCL binary build does not carry a large and clumsy Chromium, it costs less resources and brings more comforts.
+
+### Download
+
+Turn to release page to download the latest version of GCL.
+
+### License
+
+This software is distributed under GPL-v3 license.
+
+### Contribution
+
+Greeting for your contributions! Well, if you want to make your own contributions, follow this step:
+
+**1. Download and install essential components**
+
+These components are required to be prepared:
+
+* Rust toolchains
+* Microsoft C++ Build Tools (Windows OS only)
+* Tauri
+* an IDE or editor, among which I recommend Visual Studio Code
+* Git
+
+But now I do not waste more time to guide you how to install them. Just help yourself!
+
+**2. Fork this repository**
+
+Before preparing for commit Pull Requests, forking this repository in your GitHub account is necessary, or committing even a draft PR will not be allowed.
