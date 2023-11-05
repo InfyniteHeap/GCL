@@ -6,7 +6,7 @@
 
 The process of developing GCL:
 
-- [x] Microsoft OAuth2 verification (briefly accomplished)
+- [ ] Microsoft OAuth2 verification (Re-writing)
 - [ ] Download
     - [ ] Game download
     - [ ] Mods download
@@ -14,17 +14,17 @@ The process of developing GCL:
     - [ ] Auto-detect
     - [ ] Custom directory
     - [ ] Automatically match the proper Java version with selected Minecraft version
-- [ ] Manage game and mods
+- [ ] Game and mods management
     - [ ] Game
     - [ ] Mods
 - [ ] Game launch
     - [ ] Genius login
     - [ ] Offline login
 - [ ] Completed application interface
-    - [ ] "Launch" panel
-    - [ ] "Management" panel
-    - [ ] "Settings" panel
-    - [ ] "About" panel
+    - [ ] "Launch" page
+    - [ ] "Management" page
+    - [ ] "Settings" page
+    - [ ] "About" page
 
 ### What You Should Know
 
