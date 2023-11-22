@@ -6,7 +6,7 @@
 
 The process of developing GCL:
 
-- [*] Microsoft OAuth2 verification (Roughly completed!)
+- [x] Microsoft OAuth2 verification (Roughly completed!)
 - [ ] Download
     - [ ] Game download
     - [ ] Mods download
