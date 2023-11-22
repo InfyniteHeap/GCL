@@ -1,12 +1,12 @@
 # Grid Craft Launcher
 
-> This project is under development.
+>This project is under development.
 
 **Note: This program is provided "as-is" so there are no guarantees that this source code obeys standards and compliance.**
 
 The process of developing GCL:
 
-- [ ] Microsoft OAuth2 verification (Re-writing)
+- [*] Microsoft OAuth2 verification (Roughly completed!)
 - [ ] Download
     - [ ] Game download
     - [ ] Mods download
