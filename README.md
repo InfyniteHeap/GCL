@@ -37,7 +37,7 @@ Because GCL used Tauri, elements in client area of GCL windows might not normall
 
 ### Introduction
 
-The Grid Craft Launcher, also called "GCL", is one of good alternatives of Minecraft official launcher. Thanks to Rust, it is fast and memory-safety!
+The **Grid Craft Launcher**, also called "GCL", is one of good alternatives of Minecraft official launcher. Thanks to Rust, it is fast and memory-safety!
 
 GCL is simple but powerful enough to match all what you required! Game download, mods installation and management, Microsoft OAuth2 authriozation...all of which are covered!
 
@@ -47,7 +47,7 @@ GCL is also a cross-platform launcher! It can run on mutiple operating systems a
 
 ### Download
 
-The release page offers the download links of the latest version of GCL.
+The [release](https://github.com/TheBlueAlgae/GCL/releases) page offers the download links of the latest version of GCL.
 
 ### License
 
