@@ -37,8 +37,8 @@
         "fullscreen": false,
         "resizable": true,
         "title": "Grid Craft Launcher",
-        "width": 800,
-        "height": 600,
+        "width": 960,
+        "height": 540,
         "center": true
       }
     ]
