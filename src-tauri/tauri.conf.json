@@ -1,14 +1,13 @@
 {
   "build": {
-    "beforeDevCommand": "",
-    "beforeBuildCommand": "",
-    "devPath": "../src",
-    "distDir": "../src",
-    "withGlobalTauri": true
+    "beforeDevCommand": "pnpm dev",
+    "beforeBuildCommand": "pnpm build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
   },
   "package": {
-    "productName": "Grid Craft Launcher",
-    "version": "0.1.0"
+    "productName": "GCL",
+    "version": "0.0.0"
   },
   "tauri": {
     "allowlist": {
@@ -38,8 +37,8 @@
         "fullscreen": false,
         "resizable": true,
         "title": "Grid Craft Launcher",
-        "width": 960,
-        "height": 540,
+        "width": 800,
+        "height": 600,
         "center": true
       }
     ]
