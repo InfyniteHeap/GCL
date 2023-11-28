@@ -13,7 +13,7 @@ async function greet() {
 
 <template>
   <form class="row" @submit.prevent="greet">
-    <input id="greet-input" v-model="name" placeholder="Enter a name..." />
+    <input id="greet-input" v-model="name" placeholder="Enter a name..." autocomplete="off" />
     <button type="submit">Greet</button>
   </form>
 
