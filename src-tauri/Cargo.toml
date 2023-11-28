@@ -2,7 +2,7 @@
 name = "gcl"
 version = "0.0.0"
 description = "Grid Craft Launcher - A light, swift, simple and cross-platform Minecraft launcher that is written in Rust."
-authors = ["infyniteHeap"]
+authors = ["InfyniteHeap"]
 license = "GPL-3.0"
 repository = "https://github.com/InfyniteHeap/GCL"
 edition = "2021"
