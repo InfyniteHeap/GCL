@@ -2,7 +2,7 @@
 
 >This project is under development.
 
->This repository includes all of GCL source code except "gridcore", which is seperately managed in an [independent repository](https://github.com/TheBlueAlgae/gridcore).
+>This repository includes all of GCL source code except `gridcore`, which is seperately managed in an [independent repository](https://github.com/TheBlueAlgae/gridcore).
 
 **Note: This program is provided "as-is" so there are no guarantees that this source code follows standards and compliance.**
 
