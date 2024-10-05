@@ -1,4 +1,4 @@
-export function disableShortcuts() {
+export function disableOperations() {
   window.addEventListener("contextmenu", (event) => event.preventDefault());
   window.addEventListener("auxclick", (event) => event.preventDefault());
   window.addEventListener("keydown", function (event) {
