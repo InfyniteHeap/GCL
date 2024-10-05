@@ -45,11 +45,21 @@ export function disableShortcuts() {
         const keys = shortcut.split("+");
 
         return keys.every((key) => {
-          if (key === "Ctrl" || key === "Command")
-            return event.ctrlKey || event.metaKey;
-          if (key === "Shift") return event.shiftKey;
-          if (key === "Alt") return event.altKey;
-          return event.key === key; // Check the actual key
+          switch (key) {
+            case "Ctrl":
+            case "Command": {
+              return event.ctrlKey || event.metaKey;
+            }
+            case "Shift": {
+              return event.shiftKey;
+            }
+            case "Alt": {
+              return event.altKey;
+            }
+            default: {
+              return event.key === key; // Check the actual key
+            }
+          }
         });
       })
     ) {
