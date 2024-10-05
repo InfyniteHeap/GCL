@@ -1,5 +1,9 @@
 import { invoke } from "@tauri-apps/api/core";
 
+import { disableShortcuts } from "./shortcuts_disabling";
+
+disableShortcuts();
+
 let greetInputEl: HTMLInputElement | null;
 let greetMsgEl: HTMLElement | null;
 
