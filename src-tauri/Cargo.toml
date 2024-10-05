@@ -1,8 +1,8 @@
 [package]
 name = "gcl"
 version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
+description = "Grid Craft Launcher - A light, swift, simple and cross-platform Minecraft launcher that is written in Rust."
+authors = ["Yue Fei <thebluealgae1123@outlook.com>"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -22,3 +22,12 @@ tauri = { version = "2.0.0", features = [] }
 tauri-plugin-shell = "2.0.0"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
+
+[profile.dev]
+incremental = true
+
+[profile.release]
+codegen-units = 1
+lto = true
+panic = "abort"
+strip = true
