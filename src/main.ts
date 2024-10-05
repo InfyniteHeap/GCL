@@ -1,6 +1,6 @@
 import { invoke } from "@tauri-apps/api/core";
 
-import { disableShortcuts } from "./shortcuts_disabling";
+import { disableShortcuts } from "./operations_disabling";
 
 disableShortcuts();
 
