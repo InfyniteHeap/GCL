@@ -23,7 +23,7 @@ pnpm tauri dev # You can also run `cargo tauri dev`, but you must install Tauri 
 
 And later a window will display on your screen!
 
-> I think you don't want to run and debug this program on WSL. (ᗜ ˰ ᗜ)
+> I don't think you want to run and debug this program on WSL. (ᗜ ˰ ᗜ)
 
 To build as release mode, run:
 
