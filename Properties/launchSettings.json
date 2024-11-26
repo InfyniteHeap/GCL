@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GridCraftLauncher (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "GridCraftLauncher (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
