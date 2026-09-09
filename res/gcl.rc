@@ -1,6 +1,5 @@
 #include <winres.h>
 
-CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "gcl.exe.manifest"
 MAINICON ICON "logo.ico"
 
 VS_VERSION_INFO VERSIONINFO

@@ -34,8 +34,8 @@ fn main() {
     #[cfg(all(target_os = "windows", target_env = "msvc"))]
     {
         windows_reactor_setup::as_self_contained();
-        // FIXME: Manifest linking confilct.
-        // embed_resources();
+
+        embed_resources();
     }
     #[cfg(not(all(target_os = "windows", target_env = "msvc")))]
     compile_error!("This project must be built on Windows with MSVC toolchain!");
@@ -48,22 +48,29 @@ fn embed_resources() {
     let version = std::env::var("CARGO_PKG_VERSION").unwrap_or("0.0.0".into());
     let out_dir = std::env::var("OUT_DIR").expect("OUT_DIR not set");
 
-    build_manifest(&version, &out_dir);
+    let manifest_path = build_manifest(&version, &out_dir);
     build_icon(&out_dir);
     let rc_path = build_resource_file(&version, &out_dir);
 
+    // Manifest and resource file must be separately embedded in binary
+    println!(
+        "cargo:rustc-link-arg-bins=/MANIFESTINPUT:{}",
+        manifest_path.display()
+    );
     embed_resource::compile(rc_path, embed_resource::NONE)
         .manifest_required()
         .unwrap();
 }
 
 #[cfg(all(target_os = "windows", target_env = "msvc"))]
-fn build_manifest(version: &str, out_dir: &str) {
+fn build_manifest(version: &str, out_dir: &str) -> std::path::PathBuf {
     let raw_manifest = include_str!("res/gcl.exe.manifest");
     let manifest = raw_manifest.replace("{{VERSION}}", &parse_version(version).join("."));
 
     let manifest_path = std::path::Path::new(out_dir).join("gcl.exe.manifest");
     std::fs::write(&manifest_path, manifest).expect("failed to write generated gcl.exe.manifest");
+
+    manifest_path
 }
 
 #[cfg(all(target_os = "windows", target_env = "msvc"))]
